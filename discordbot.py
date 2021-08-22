@@ -5,13 +5,14 @@ import json
 import datetime
 import os
 from pprint import pprint
+
 # 輸入自己Bot的TOKEN碼
 TOKEN = os.environ['TOKEN']
 channel_1 = os.environ['channel_1']
 SRCLanguage=os.environ['SRC']
 DSTLanguage=os.environ['DST']
 
-client = commands.Bot(command_prefix= '[')
+bot = commands.Bot(command_prefix= '[')
 
 # 起動時呼叫
 @client.event
