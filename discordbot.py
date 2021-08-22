@@ -54,6 +54,7 @@ async def cf(self, ctx):
         content=f"{res.component.label} has been  clicked! this is button 1."
 
         )
+
 @bot.command()
 async def open(ctx):
     await ctx.send('伺服器狀態已更改：🟢')
