@@ -21,6 +21,7 @@ async def on_ready():
     
 @bot.command()
 async def ping(ctx):
+    await bot.change_presence(activity=discord.Game(name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
     await ctx.send(f'現在延遲 ➡ {round(bot.latency*1000)}(ms)')
 
 @bot.command()
