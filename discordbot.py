@@ -39,22 +39,6 @@ async def em(ctx):
     embed.set_footer(text="Requisitado per 海苔Kevin#4760")
     await ctx.send(embed=embed)
 
-@bot.command()
-async def fc(ctx):
-    await ctx.channel.send(
-        "This is a button test :smile:",
-        components=[
-            Button(style=ButtonStyle.blue,label="button 1")
-        ],
-    )
-
-    res = await self.bot,wait_for("button_click")
-    if res.channel == ctx.channel:
-        await res.respond(
-            type=InteractionType.ChannelMessageWithSource,
-            content=f"{res.component.label} has been  clicked! this is button 1."
-
-        )
 
 @bot.command()
 async def open(ctx):
