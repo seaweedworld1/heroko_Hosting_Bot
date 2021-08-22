@@ -11,7 +11,6 @@ channel_1 = os.environ['channel_1']
 SRCLanguage=os.environ['SRC']
 DSTLanguage=os.environ['DST']
 
-client = discord.Client()
 bot = commands.Bot(command_prefix= '[')
 
 # 起動時呼叫
