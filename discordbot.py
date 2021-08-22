@@ -39,8 +39,8 @@ async def em(ctx):
     embed.set_footer(text="Requisitado per 海苔Kevin#4760")
     await ctx.send(embed=embed)
 
-@bot.command()
-async def cf(self, ctx):
+@bot.command(name= 'button')
+async def button(self, ctx):
     await ctx.channel.send(
         "This is a button test :smile:",
         components=[
