@@ -16,9 +16,9 @@ bot = commands.Bot(command_prefix= '[')
 # 起動時呼叫
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
     print(">> Bot is online 🟢 <<")
-
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
+    
 @bot.command()
 async def ping(ctx):
     await ctx.send(f'現在延遲 ➡ {round(bot.latency*1000)}(ms)')
