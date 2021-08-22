@@ -1,7 +1,9 @@
 import discord
-import googletrans
-import os
+from discord.ext import commands
+client = discord.Client()
+import json
 import datetime
+import os
 from pprint import pprint
 # 輸入自己Bot的TOKEN碼
 TOKEN = os.environ['TOKEN']
