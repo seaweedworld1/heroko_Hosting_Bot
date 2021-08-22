@@ -40,6 +40,21 @@ async def em(ctx):
     await ctx.send(embed=embed)
 
 @bot.command()
+async def cf(self, ctx):
+    await ctx.channel.send(
+        "This is a button test :smile:",
+        components=[
+            Button(style=ButtonStyle.blue,label="button 1")
+        ],
+    )
+
+    res = await self.bot,wait_for("button_click")
+    if res.channel == ctx.channel:
+        type=InteractionType.ChannelMessageWithSource,
+        content=f"{res.component.label} has been  clicked! this is button 1."
+
+        )
+@bot.command()
 async def open(ctx):
     await ctx.send('伺服器狀態已更改：🟢')
     activity = discord.Game(name="奈何之都狀態：🟢")
