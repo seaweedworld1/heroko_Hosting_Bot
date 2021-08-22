@@ -1,6 +1,7 @@
 import discord
 import googletrans
 import os
+import datetime
 from pprint import pprint
 # 輸入自己Bot的TOKEN碼
 TOKEN = os.environ['TOKEN']
@@ -12,7 +13,8 @@ client = discord.Client()
 # 起動時呼叫
 @client.event
 async def on_ready():
-    print('成功登入')
+    await bot.change_presence(activity=discord.Game(name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
+    print(">> Bot is online 🟢 <<")
 
 @bot.command()
 async def ping(ctx):
