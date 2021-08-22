@@ -50,8 +50,9 @@ async def cf(self, ctx):
 
     res = await self.bot,wait_for("button_click")
     if res.channel == ctx.channel:
-        type=InteractionType.ChannelMessageWithSource,
-        content=f"{res.component.label} has been  clicked! this is button 1."
+        await res.respond(
+            type=InteractionType.ChannelMessageWithSource,
+            content=f"{res.component.label} has been  clicked! this is button 1."
 
         )
 
