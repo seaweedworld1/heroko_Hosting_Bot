@@ -19,7 +19,7 @@ DSTLanguage=os.environ['DST']
 
 
 # 起動時呼叫
-@bot.event
+@client.event
 async def on_ready():
     await bot.change_presence(activity=discord.Game(name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
     print(">> Bot is online 🟢 <<")
