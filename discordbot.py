@@ -21,7 +21,6 @@ DSTLanguage=os.environ['DST']
 @client.event
 async def on_ready():
     print(">> Bot is online 🟢 <<")
-    activity = discord.Game(name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
     
 @bot.command()
 async def ping(ctx):
