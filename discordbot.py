@@ -1,11 +1,13 @@
 import discord
 from discord.ext import commands
-client = discord.Client()
 import json
 import datetime
 import googletrans
 import os
 from pprint import pprint
+
+client = discord.Client()
+bot = commands.Bot(command_prefix= '[')
 
 # 輸入自己Bot的TOKEN碼
 TOKEN = os.environ['TOKEN']
@@ -13,7 +15,7 @@ channel_1 = os.environ['channel_1']
 SRCLanguage=os.environ['SRC']
 DSTLanguage=os.environ['DST']
 
-bot = commands.Bot(command_prefix= '[')
+
 
 # 起動時呼叫
 @client.event
