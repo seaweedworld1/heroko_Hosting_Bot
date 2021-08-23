@@ -3,6 +3,7 @@ from discord.ext import commands
 client = discord.Client()
 import json
 import datetime
+import googletrans
 import os
 from pprint import pprint
 
