@@ -5,9 +5,11 @@ import datetime
 import googletrans
 import os
 from pprint import pprint
+intents = discord.Intents.all()
+
 
 client = discord.Client()
-bot = commands.Bot(command_prefix= '[')
+bot = commands.Bot(command_prefix= '[', intents = intents)
 
 # 輸入自己Bot的TOKEN碼
 TOKEN = os.environ['TOKEN']
