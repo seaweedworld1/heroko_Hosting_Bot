@@ -8,7 +8,7 @@ import os
 from pprint import pprint
 intents = discord.Intents.all()
 
-bot = commands.Bot(command_prefix= '[', intents = intents)
+bot = commands.Bot(command_prefix= '[')
 
 # 輸入自己Bot的TOKEN碼
 TOKEN = os.environ['TOKEN']
