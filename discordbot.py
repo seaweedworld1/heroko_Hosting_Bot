@@ -18,7 +18,7 @@ DSTLanguage=os.environ['DST']
 
 
 # 起動時呼叫
-@client.event
+@bot.event
 async def on_ready():
     print(">> Bot is online 🟢 <<")
     
