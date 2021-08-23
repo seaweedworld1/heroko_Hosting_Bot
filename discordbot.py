@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+client = discord.Client()
 import json
 import datetime
 import googletrans
@@ -7,8 +8,6 @@ import os
 from pprint import pprint
 intents = discord.Intents.all()
 
-
-client = discord.Client()
 bot = commands.Bot(command_prefix= '[', intents = intents)
 
 # 輸入自己Bot的TOKEN碼
@@ -20,8 +19,9 @@ DSTLanguage=os.environ['DST']
 
 
 # 起動時呼叫
-@client.event
+@bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Game(name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
     print(">> Bot is online 🟢 <<")
     
 @bot.command()
