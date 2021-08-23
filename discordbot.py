@@ -19,6 +19,7 @@ bot = commands.Bot(command_prefix= '[')
 @client.event
 async def on_ready():
     print(">> Bot is online 🟢 <<")
+    await bot.change_presence(activity=discord.Game(name="🗼奈何之都1.0   製作:海苔Kevin#4760"))
     
 @bot.command()
 async def ping(ctx):
